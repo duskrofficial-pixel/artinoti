@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="App Package Name (optional, e.g. com.discord)"
+        android:textColor="?attr/colorOnBackground"
+        android:textSize="12sp"
+        android:layout_marginBottom="4dp" />
+
+    <EditText
+        android:id="@+id/et_rule_app_pkg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Leave empty or * for all apps"
+        android:inputType="textUri"
+        android:textColor="?attr/colorOnBackground"
+        android:layout_marginBottom="12dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Keyword to Match"
+        android:textColor="?attr/colorOnBackground"
+        android:textSize="12sp"
+        android:layout_marginBottom="4dp" />
+
+    <EditText
+        android:id="@+id/et_rule_keyword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="e.g. LONG SIGNAL"
+        android:inputType="text"
+        android:textColor="?attr/colorOnBackground"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Match Evaluation Type"
+        android:textColor="?attr/colorOnBackground"
+        android:textSize="12sp"
+        android:layout_marginBottom="4dp" />
+
+    <Spinner
+        android:id="@+id/spinner_match_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp" />
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/switch_case_sensitive"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Case Sensitive Match"
+        android:textColor="?attr/colorOnBackground" />
+
+</LinearLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Test App Package Name"
+        android:textColor="?attr/colorOnBackground"
+        android:textSize="12sp"
+        android:layout_marginBottom="4dp" />
+
+    <EditText
+        android:id="@+id/et_test_app"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="com.discord"
+        android:inputType="textUri"
+        android:textColor="?attr/colorOnBackground"
+        android:layout_marginBottom="12dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Test Notification Title"
+        android:textColor="?attr/colorOnBackground"
+        android:textSize="12sp"
+        android:layout_marginBottom="4dp" />
+
+    <EditText
+        android:id="@+id/et_test_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="e.g. Signal Alert"
+        android:inputType="text"
+        android:textColor="?attr/colorOnBackground"
+        android:layout_marginBottom="12dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Test Notification Body Text"
+        android:textColor="?attr/colorOnBackground"
+        android:textSize="12sp"
+        android:layout_marginBottom="4dp" />
+
+    <EditText
+        android:id="@+id/et_test_body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="e.g. BUY XAUUSDT.P Sweep"
+        android:inputType="textLongMessage"
+        android:textColor="?attr/colorOnBackground" />
+
+</LinearLayout>
